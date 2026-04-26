@@ -1,0 +1,188 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    🎯 QUICK TEST GUIDE - DASHBOARD FIXES                     ║
+║                           April 13, 2026                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ BOTH SERVERS ARE RUNNING:
+   • API Server:  http://localhost:8000  ✓
+   • Dashboard:   http://localhost:5173  ✓
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 TEST CHECKLIST
+
+┌─ TEST 1: WORM GEAR BUTTON ────────────────────────────────────────────────┐
+│                                                                            │
+│  1. Open browser: http://localhost:5173                                   │
+│                                                                            │
+│  2. Look at the top of the page (gear selector)                           │
+│                                                                            │
+│  3. You should see 4 buttons:                                             │
+│     ┌──────────┬──────────┬──────────┬──────────┐                        │
+│     │ ⚙️ Helical│ 🔧 Spur  │ 🔩 Bevel │ 🌀 Worm  │  ← NEW!               │
+│     └──────────┴──────────┴──────────┴──────────┘                        │
+│                                                                            │
+│  4. Click on "🌀 Worm" button                                             │
+│                                                                            │
+│  5. ✅ Button should highlight/activate                                    │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TEST 2: MODEL COMPARISON TAB ────────────────────────────────────────────┐
+│                                                                            │
+│  1. Click on "📊 Model Comparison" tab                                    │
+│                                                                            │
+│  2. ✅ Should see dropdown menu at top                                     │
+│                                                                            │
+│  3. ✅ Should see purple gradient statistics card                          │
+│                                                                            │
+│  4. ✅ Should see table with models                                        │
+│                                                                            │
+│  5. ✅ Should see bar chart at bottom                                      │
+│                                                                            │
+│  6. ✅ NO WHITE SCREEN!                                                    │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TEST 3: DROPDOWN MENU ───────────────────────────────────────────────────┐
+│                                                                            │
+│  1. In Model Comparison tab, click the dropdown                           │
+│                                                                            │
+│  2. You should see 5 options:                                             │
+│     • 🌐 Overall Comparison (All Gears)  ← Shows combined stats          │
+│     • ⚙️ Helical Gear                                                     │
+│     • 🔧 Spur Gear                                                        │
+│     • 🔩 Bevel Gear                                                       │
+│     • 🌀 Worm Gear                        ← NEW!                          │
+│                                                                            │
+│  3. Select "Overall Comparison"                                           │
+│                                                                            │
+│  4. ✅ Should see:                                                         │
+│     • Total Gear Types: 4                                                 │
+│     • Total Models: 8                                                     │
+│     • Avg Accuracy: 95.05%                                                │
+│     • Avg F1 Score: 95.11%                                                │
+│     • Avg AUC: 97.96%                                                     │
+│                                                                            │
+│  5. Select each gear type from dropdown                                   │
+│                                                                            │
+│  6. ✅ Table and chart should update                                       │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TEST 4: BROWSER CONSOLE ────────────────────────────────────────────────┐
+│                                                                            │
+│  1. Press F12 to open Developer Tools                                     │
+│                                                                            │
+│  2. Go to "Console" tab                                                   │
+│                                                                            │
+│  3. ✅ Should see NO red errors                                            │
+│                                                                            │
+│  4. ✅ Should see NO warnings about missing imports                        │
+│                                                                            │
+│  5. ✅ Should see NO "Legend is not defined" errors                        │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 EXPECTED RESULTS
+
+┌─ WORM GEAR ───────────────────────────────────────────────────────────────┐
+│  ✅ Button visible in gear selector                                        │
+│  ✅ Button clickable and activates                                         │
+│  ✅ Backend fully functional (92.79% accuracy)                             │
+│  ⚠️  Uses Helical sliders for now (not a bug, just pending enhancement)   │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MODEL COMPARISON ────────────────────────────────────────────────────────┐
+│  ✅ Tab renders without white screen                                       │
+│  ✅ Dropdown menu works                                                    │
+│  ✅ Overall view shows combined statistics                                 │
+│  ✅ Individual gear views work                                             │
+│  ✅ Charts render properly                                                 │
+│  ✅ Table displays all models                                              │
+│  ✅ No console errors                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 IF SOMETHING DOESN'T WORK
+
+┌─ PROBLEM: Changes not visible ────────────────────────────────────────────┐
+│  SOLUTION: Hard refresh browser                                           │
+│  • Windows: Ctrl + Shift + R                                              │
+│  • Or clear browser cache                                                 │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ PROBLEM: Dashboard not loading ─────────────────────────────────────────┐
+│  SOLUTION: Check if servers are running                                   │
+│  • API: http://localhost:8000 should show "GearMind API"                 │
+│  • Dashboard: http://localhost:5173 should load                          │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ PROBLEM: Still seeing errors ───────────────────────────────────────────┐
+│  SOLUTION: Restart dashboard                                              │
+│  1. Stop dashboard (Ctrl+C in terminal)                                   │
+│  2. cd dashboard                                                          │
+│  3. npm run dev                                                           │
+└────────────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 WHAT EACH GEAR TYPE SHOWS
+
+⚙️  HELICAL GEAR
+   • 5 models (Logistic Regression, Random Forest, Gradient Boosting, XGBoost, SVM)
+   • Best: XGBoost (99.79% accuracy)
+   • 8 sensors
+
+🔧 SPUR GEAR
+   • 1 model (SVM RBF)
+   • Accuracy: 79.65%
+   • 6 sensors
+
+🔩 BEVEL GEAR
+   • 1 model (XGBoost)
+   • Accuracy: 99.71%
+   • 8 sensors
+
+🌀 WORM GEAR (NEW!)
+   • 1 model (Logistic Regression)
+   • Accuracy: 92.79%
+   • AUC: 98.74%
+   • 13 sensors
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 SUCCESS INDICATORS
+
+If you see all of these, everything is working:
+
+✅ 4 gear buttons visible (Helical, Spur, Bevel, Worm)
+✅ Model Comparison tab loads without white screen
+✅ Dropdown shows 5 options
+✅ Overall view shows statistics for all 4 gear types
+✅ Charts and tables render properly
+✅ No console errors
+✅ All tabs working (Health, SHAP+LIME, History, Optimizer, Cost, Models)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION FILES
+
+For more details, see:
+• FIXES_VERIFIED.md      - Detailed verification report
+• FINAL_STATUS.md        - Complete status of all fixes
+• DASHBOARD_FIX.md       - Technical details of fixes
+• README_WINDOWS.md      - Windows setup guide
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 YOU'RE ALL SET!
+
+Open your browser and go to: http://localhost:5173
+
+Everything should be working perfectly! 🎊
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
