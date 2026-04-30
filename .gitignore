@@ -7,7 +7,6 @@ __pycache__/
 env/
 venv/
 ENV/
-.venv
 build/
 develop-eggs/
 dist/
@@ -23,21 +22,21 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.npm
-.eslintcache
-dist/
-build/
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# Environment variables
+# Environment variables - CRITICAL SECURITY
 .env
 .env.local
 .env.*.local
+.env.production.local
 api.env
 
 # IDE & Editor
@@ -50,16 +49,26 @@ api.env
 .DS_Store
 Thumbs.db
 *.code-workspace
+.VS
 
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
+# Node & Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+dist/
+build/
+coverage/
 
-# ML & Data
+# Database
+*.db
+*.sqlite
+*.sqlite3
+gear_history.db
+
+# ML Models & Data
 *.pkl
 *.pickle
 *.joblib
@@ -69,7 +78,6 @@ ehthumbs.db
 *.pth
 *.npy
 *.npz
-*.csv
 data/raw/
 data/processed/
 models/artifacts/
@@ -77,6 +85,12 @@ models/artifacts/
 # MLflow
 mlruns/
 .mlflow
+experiments/
+
+# Logs
+*.log
+logs/
+*.log.*
 
 # Testing
 .pytest_cache/
@@ -84,21 +98,49 @@ mlruns/
 htmlcov/
 .tox/
 
-# Build artifacts
-*.whl
-*.tar.gz
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
 
-# Logs
-*.log
-logs/
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
-gear_history.db
-
-# Temp files
+# Temporary files
 *.tmp
 *.temp
 ~$*
+*.bak
+.#*
+
+# IDE specific
+.venv
+.python-version
+
+# Large files
+*.tar.gz
+*.zip
+*.rar
+
+# Cache
+*.cache
+.cache/
+
+# Local config
+local_settings.py
+instance/
+.webassets-cache
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Keep these directories empty
+.gitkeep
+
+# Exclude sensitive files
+secrets.yaml
+config.local.yaml
+credentials.json
