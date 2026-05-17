@@ -319,6 +319,7 @@ MIT License - see [LICENSE](LICENSE) for details
 - Internship: Elecon Engineering Works Pvt. Ltd.
 
 ## 👤 Co-Author
+
 **Isha Patel**
 **Aryan Chauhan**
 ---
