@@ -1,6 +1,6 @@
 # GearMind AI - Explainable AI for Industrial Predictive Maintenance
 
-**GearMind AI** is an industrial-grade, full-stack machine learning system for gear fault detection, remaining useful life (RUL) estimation, and predictive maintenance. Developed during an 8-week internship at **Elecon Engineering Works Pvt. Ltd.**, India's largest gear manufacturer, this system transforms reactive maintenance into predictive, data-driven operations using explainable AI.
+**GearMind AI** is an industrial-grade, full-stack machine learning system for gear fault detection, remaining useful life (RUL) estimation, and predictive maintenance. Developed during an 16-week internship at **Elecon Engineering Works Pvt. Ltd.**, India's largest gear manufacturer, this system transforms reactive maintenance into predictive, data-driven operations using explainable AI.
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
