@@ -318,6 +318,9 @@ MIT License - see [LICENSE](LICENSE) for details
 - Organization: G H Patel College of Engineering & Technology
 - Internship: Elecon Engineering Works Pvt. Ltd.
 
+## 👤 Co-Author
+**Isha Patel**
+**Aryan Chauhan**
 ---
 
 ## 🙏 Acknowledgments
