@@ -312,8 +312,8 @@ MIT License - see [LICENSE](LICENSE) for details
 
 ## 👤 Author
 
-**Isha Patel**
-- Email: ishapatel@ghpatel.ac.in
+**Om Patel**
+- Email: patelomniraj@gmail.com
 - GitHub: [@patelomniraj](https://github.com/patelomniraj)
 - Organization: G H Patel College of Engineering & Technology
 - Internship: Elecon Engineering Works Pvt. Ltd.
@@ -324,9 +324,7 @@ MIT License - see [LICENSE](LICENSE) for details
 
 - **Elecon Engineering Works** for the internship opportunity
 - **Mr. Satyam Raval** (Industry Mentor) for domain guidance
-- **Dr. Malay Bhatt** (Academic Guide) for supervision
-- **Dr. Nikhil Gondaliya** (Department Head) for support
-
+- **Dr. Kinjal Joshi** (Academic Guide) for supervision
 ---
 
 ## 📞 Support
