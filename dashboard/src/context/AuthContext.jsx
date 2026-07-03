@@ -93,9 +93,13 @@ export function AuthProvider({ children }) {
       if (session) {
         const parsed = JSON.parse(session);
         const u = getStoredUsers().find(u => u.id === parsed.id);
-        if (u) setCurrentUser(u);
+        if (u) { setCurrentUser(u); setLoading(false); return; }
       }
     } catch {}
+    // Auto-login as Super Admin for direct viewer access (no login page)
+    const defaultUser = getStoredUsers()[0];
+    setCurrentUser(defaultUser);
+    localStorage.setItem('prognos_session', JSON.stringify({ id: defaultUser.id }));
     setLoading(false);
   }, []);
 
