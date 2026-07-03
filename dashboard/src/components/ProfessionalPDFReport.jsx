@@ -425,7 +425,7 @@ export function ProfessionalPDFReport({ sensorValues, gearId, gearType, predicti
         
         doc.setFontSize(8);
         doc.setTextColor(148, 163, 184);
-        doc.text('GearMind AI - Elecon Engineering Company', margin, pageHeight - 10);
+        doc.text('GearMind AI - Gear Management System', margin, pageHeight - 10);
         doc.text(`Page ${i} of ${totalPages}`, pageWidth - margin, pageHeight - 10, { align: 'right' });
         doc.setFontSize(7);
         doc.text('Confidential - For Internal Use Only', pageWidth / 2, pageHeight - 10, { align: 'center' });

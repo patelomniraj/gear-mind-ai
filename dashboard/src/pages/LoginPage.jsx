@@ -43,7 +43,7 @@ export default function LoginPage() {
           <div className="login-logo">
             <Cog size={32} strokeWidth={2.5} />
           </div>
-          <h1>Elecon</h1>
+          <h1>GearMind AI</h1>
           <p className="login-subtitle">Gear Management System</p>
         </div>
 
@@ -117,7 +117,7 @@ export default function LoginPage() {
         </form>
 
         <div className="login-footer">
-          <p>Elecon Engineering Works Pvt. Ltd.</p>
+          <p>GearMind AI · Academic Learning Project</p>
           <p>Anand, Gujarat • v4.0</p>
         </div>
       </motion.div>

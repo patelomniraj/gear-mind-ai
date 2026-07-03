@@ -23,7 +23,7 @@ export default function Sidebar({ activePage, setActivePage }) {
     <div className="sidebar">
       {/* Brand */}
       <div className="sidebar-brand">
-        <h1><Cog size={24} className="sidebar-cog" /> Elecon</h1>
+        <h1><Cog size={24} className="sidebar-cog" /> GearMind</h1>
         <div className="subtitle">GEAR MANAGEMENT SYSTEM</div>
       </div>
 

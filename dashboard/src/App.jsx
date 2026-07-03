@@ -31,7 +31,7 @@ export default function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
 
-  if (loading) return <div className="loading"><div className="spinner" /> Loading Elecon...</div>;
+  if (loading) return <div className="loading"><div className="spinner" /> Loading GearMind AI...</div>;
   if (!currentUser) return <LoginPage />;
 
   // Search functionality
@@ -183,7 +183,7 @@ export default function App() {
 
         {/* Footer */}
         <div className="footer">
-          ⚙ Elecon v4.0 · Gear Management System · Elecon Engineering Works Pvt. Ltd., Anand, Gujarat
+          ⚙ GearMind AI v4.0 · Gear Management System · Academic Learning Project
         </div>
       </div>
 
