@@ -35,7 +35,10 @@ app = FastAPI(title="GearMind AI API", version="5.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://gear-mind-5p7hdk1tv-gear-build.vercel.app",
+        "http://localhost:5173",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
