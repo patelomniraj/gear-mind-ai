@@ -82,6 +82,37 @@ data/raw/
 data/processed/
 models/artifacts/
 
+# BUT track model files needed for deployment
+!models/best_classifier.pkl
+!models/rul_regressor.pkl
+!models/scaler.pkl
+!models/scaler_rul.pkl
+!models/label_encoder.pkl
+!models/spur_svm_classifier.pkl
+!models/spur_svm_rul_regressor.pkl
+!models/spur_svm_scaler.pkl
+!models/spur_svm_scaler_rul.pkl
+!models/spur_svm_label_encoder.pkl
+!models/bevel_classifier.pkl
+!models/bevel_rul_regressor.pkl
+!models/bevel_scaler.pkl
+!models/bevel_scaler_rul.pkl
+!models/bevel_label_encoder.pkl
+!models/worm_classifier.pkl
+!models/worm_rul_regressor.pkl
+!models/worm_scaler.pkl
+!models/worm_scaler_rul.pkl
+!models/worm_label_encoder.pkl
+!models/cms_rf_fault_model.pkl
+!models/cms_health_scaler.pkl
+!xai/shap_artifacts.pkl
+!xai/anomaly_model.pkl
+!xai/spur_shap_artifacts.pkl
+!xai/bevel_shap_artifacts.pkl
+!xai/worm_shap_artifacts.pkl
+!data/inner_fault.npy
+!data/outer_fault.npy
+
 # MLflow
 mlruns/
 .mlflow

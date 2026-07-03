@@ -372,7 +372,7 @@ export function ModelComparison({ compData }) {
   
   useEffect(() => {
     // Fetch structured comparison data
-    fetch('http://localhost:8000/api/models/comparison')
+    fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/models/comparison`)
       .then(res => res.json())
       .then(data => setComparisonData(data))
       .catch(console.error);
